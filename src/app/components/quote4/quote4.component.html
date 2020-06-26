@@ -1,0 +1,36 @@
+<h5>Toiletries</h5>
+<p>Here's a quote for your toiletries</p>
+<table class="table table-hover table-dark">
+    <thead>
+        <tr>
+            <th scope="col">Item Num</th>
+            <th scope="col">Item Desc</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>12</td>
+            <td>English Blazer</td>
+            <td>{{sprayQty}}</td>
+            <td>R{{sprayPrice}}</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Nivea for Men</td>
+            <td>{{rollOnQty}}</td>
+            <td>R{{rollOnPrice}}</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>Vaseline Body Lotion</td>
+            <td>{{lotionQty}}</td>
+            <td>R{{lotionPrice}}</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="text-center"><button (click) = "calculateTotal()" class="btn btn-danger">Get Total</button></td>
+            <td>R{{total}}</td>
+        </tr>
+    </tbody>
+</table>

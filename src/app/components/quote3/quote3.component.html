@@ -1,0 +1,37 @@
+<h5>School</h5>
+<p>Here's a quote for your school</p>
+
+<table class="table table-hover table-dark">
+    <thead>
+        <tr>
+            <th scope="col">Item Num</th>
+            <th scope="col">Item Desc</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>12</td>
+            <td>A4 Book</td>
+            <td>{{bookQty}}</td>
+            <td>R{{bookPrice}}</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Black Pen</td>
+            <td>{{penQty}}</td>
+            <td>{{penPrice}}</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>Eraser</td>
+            <td>{{eraserQty}}</td>
+            <td>R{{eraserPrice}}</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="text-center"><button (click) = "calculateTotal()" class="btn btn-danger">Get Total</button></td>
+            <td>R{{total}}</td>
+        </tr>
+    </tbody>
+</table>

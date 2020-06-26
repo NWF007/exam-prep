@@ -1,0 +1,37 @@
+<h5>Phones</h5>
+<p>Here's a quote for your phones</p>
+
+<table class="table table-hover table-dark">
+    <thead>
+        <tr>
+            <th scope="col">Part Num</th>
+            <th scope="col">Part Desc</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>12</td>
+            <td>Samsung Galaxy S20</td>
+            <td>{{galaxyQty}}</td>
+            <td>R{{galaxyPrice}}</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Iphone 11 Pro Max</td>
+            <td>{{iphoneQty}}</td>
+            <td>R{{iphonePrice}}</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>Huawei P40</td>
+            <td>{{huaweiQty}}</td>
+            <td>R{{huaweiPrice}}</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="text-center"><button (click) = "calculateTotal()" class="btn btn-danger">Get Total</button></td>
+            <td>R{{total}}</td>
+        </tr>
+    </tbody>
+</table>
